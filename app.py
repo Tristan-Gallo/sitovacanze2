@@ -196,7 +196,7 @@ def test():
   output = io.BytesIO()
   FigureCanvas(fig).print_png(output)
   return Response(output.getvalue(), mimetype='image/png')
-  #return render_template('result.html',  map=m._repr_html_())
+
 
 
 if __name__ == '__main__':
